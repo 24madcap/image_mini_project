@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Pytest
+.pytest_cache/
+
+# Output
+image_pro_output/
+*.tmp
+
+# VS Code / IDE
+.vscode/
+.idea/
