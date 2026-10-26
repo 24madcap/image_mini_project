@@ -399,12 +399,12 @@ class MainWindow(QMainWindow):
         self._viewer = ImageViewer()
         self._viewer.setVisible(False)
 
-        left_layout.addWidget(self._drop_zone)
-        left_layout.addWidget(self._viewer)
+        left_layout.addWidget(self._drop_zone, 1)
+        left_layout.addWidget(self._viewer, 1)
 
         # แถบแสดงความคืบหน้า
         self._progress = ProcessingProgressBar()
-        left_layout.addWidget(self._progress)
+        left_layout.addWidget(self._progress, 0)
 
         # แผงตั้งค่า (ขวา)
         self._settings = SettingsPanel()

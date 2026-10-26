@@ -31,19 +31,19 @@ class DropZone(QWidget):
         """สร้าง UI ของ Drop Zone"""
         layout = QVBoxLayout(self)
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        layout.setSpacing(16)
+        layout.setSpacing(20)
 
         # ไอคอน
         icon_label = QLabel("🖼️")
         icon_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        icon_label.setStyleSheet("font-size: 48px; background: transparent; border: none;")
+        icon_label.setStyleSheet("font-size: 72px; background: transparent; border: none;")
         layout.addWidget(icon_label)
 
         # ข้อความหลัก
         main_label = QLabel("ลากและวางรูปภาพที่นี่")
         main_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_label.setStyleSheet(
-            "font-size: 16px; font-weight: bold; color: #cccccc; "
+            "font-size: 22px; font-weight: bold; color: #cccccc; "
             "background: transparent; border: none;"
         )
         layout.addWidget(main_label)
@@ -52,21 +52,21 @@ class DropZone(QWidget):
         sub_label = QLabel("รองรับ PNG, JPG, BMP, TIFF, WebP")
         sub_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         sub_label.setStyleSheet(
-            "font-size: 11px; color: #888888; background: transparent; border: none;"
+            "font-size: 13px; color: #888888; background: transparent; border: none;"
         )
         layout.addWidget(sub_label)
 
         # ปุ่มเลือกไฟล์
         browse_btn = QPushButton("📂 เลือกไฟล์")
         browse_btn.setCursor(Qt.CursorShape.PointingHandCursor)
-        browse_btn.setFixedSize(160, 40)
+        browse_btn.setFixedSize(190, 48)
         browse_btn.setStyleSheet("""
             QPushButton {
                 background-color: #4a9eff;
                 color: white;
                 border: none;
                 border-radius: 6px;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: bold;
                 padding: 8px 16px;
             }

@@ -39,7 +39,7 @@ class SettingsPanel(QWidget):
 
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         super().__init__(parent)
-        self.setFixedWidth(330)
+        self.setFixedWidth(300)
         self._block_signals = False
         self._setup_ui()
         self._connect_signals()
